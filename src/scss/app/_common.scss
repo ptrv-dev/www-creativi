@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $font-color;
+  background: $body-background;
+  .no-scroll {
+    overflow: hidden;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: 500;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc($container-width + 2 * $container-padding);
+  padding: 0 $container-padding;
+}
