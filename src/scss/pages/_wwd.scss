@@ -1,0 +1,31 @@
+.wwd {
+  // .wwd__body
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    .card {
+      @media screen and (min-width: 767.97px) {
+        &:nth-child(1) {
+          border-radius: 48px 8px;
+        }
+        &:nth-child(2) {
+          border-radius: 8px 48px;
+        }
+        &:nth-child(3) {
+          border-radius: 8px 48px;
+        }
+        &:nth-child(4) {
+          border-radius: 48px 8px;
+        }
+      }
+    }
+    @media screen and (max-width: 767.97px) {
+      grid-template-columns: 1fr;
+      .card {
+        border-radius: 2rem;
+      }
+    }
+  }
+}

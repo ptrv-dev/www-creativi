@@ -67,4 +67,36 @@ h3 {
 
 .section {
   padding: 3rem 0;
+  &_light {
+    background: $primary-light;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  &__suptitle {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: $gray;
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 48px 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  &__number {
+    color: $primary;
+  }
+  &__title {
+    margin: 0.5rem 0 1rem 0;
+  }
+  &__text {
+    color: $gray;
+  }
 }
