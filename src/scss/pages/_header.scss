@@ -41,7 +41,7 @@
       }
     }
     span {
-      transition: all 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, width 0.2s ease-in-out;
       width: 100%;
       height: 3px;
       background: $dark;
@@ -94,7 +94,7 @@
 
   @media screen and (max-width: 800px) {
     position: fixed;
-    right: -100%;
+    right: 10px;
     top: calc(40px + 2rem + 10px);
     background: $white;
     flex-direction: column;
@@ -105,10 +105,10 @@
     &__link {
       font-size: 1.125rem;
     }
-
-    transition: right 0.3s ease-in-out;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
     &.active {
-      right: 10px;
+      transform: translateX(0);
     }
   }
 }
