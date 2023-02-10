@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family;
   font-size: $font-size;
@@ -65,9 +69,17 @@ h3 {
   padding: 0.5rem 1.5rem;
   color: $white;
   font-weight: 600;
+  transition: box-shadow 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 4px 10px rgba($primary, 0.5);
+  }
   &_empty {
     color: $primary;
     background: none;
+    &:hover {
+      box-shadow: none;
+      text-decoration: underline;
+    }
   }
 }
 
