@@ -95,7 +95,7 @@ h3 {
   text-decoration: none;
   align-items: center;
   gap: 0.5rem;
-  background: #6a91fd;
+  background: #4070ef;
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
   color: #fafafa;
@@ -103,10 +103,10 @@ h3 {
   transition: box-shadow 0.2s ease-in-out;
 }
 .btn:hover {
-  box-shadow: 0 4px 10px rgba(106, 145, 253, 0.5);
+  box-shadow: 0 4px 10px rgba(64, 112, 239, 0.5);
 }
 .btn_empty {
-  color: #6a91fd;
+  color: #4070ef;
   background: none;
 }
 .btn_empty:hover {
@@ -118,7 +118,7 @@ h3 {
   padding: 3rem 0;
 }
 .section_light {
-  background: #e2eafd;
+  background: #dee4f3;
 }
 .section__header {
   display: flex;
@@ -130,6 +130,12 @@ h3 {
 .section__header_left {
   align-items: flex-start;
   text-align: left;
+}
+.section__header_white {
+  color: #fafafa;
+}
+.section__header_white p {
+  color: #fafafa;
 }
 .section__suptitle {
   font-weight: 600;
@@ -146,7 +152,7 @@ h3 {
   flex-direction: column;
 }
 .card__number {
-  color: #6a91fd;
+  color: #4070ef;
 }
 .card__title {
   margin: 0.5rem 0 1rem 0;
@@ -165,7 +171,7 @@ h3 {
 .info-card__title {
   font-size: 4.5rem;
   line-height: 1;
-  color: #6a91fd;
+  color: #4070ef;
 }
 .info-card__col {
   display: inline-flex;
@@ -320,13 +326,13 @@ h3 {
   display: block;
   width: 0%;
   height: 0.125rem;
-  background: #6a91fd;
+  background: #4070ef;
   left: 0;
   bottom: -2px;
   transition: width 0.2s ease-in-out;
 }
 .nav__link:hover {
-  color: #6a91fd;
+  color: #4070ef;
 }
 .nav__link:hover::after {
   width: 100%;
@@ -353,6 +359,11 @@ h3 {
   }
 }
 
+@media screen and (min-width: 767.98) {
+  .hero {
+    padding-bottom: 8rem;
+  }
+}
 .hero__container {
   margin-top: calc(140px - 4rem);
   display: flex;
@@ -389,7 +400,7 @@ h3 {
   display: block;
   width: calc(100% + 1rem);
   height: 100%;
-  background: #e2eafd;
+  background: #dee4f3;
   left: 50%;
   transform: translateX(-50%);
   top: 6px;
@@ -437,6 +448,10 @@ h3 {
   flex-shrink: 1;
 }
 
+.wwd {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/what-we-do/bg.jpg") center center no-repeat;
+  background-size: cover;
+}
 .wwd__body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -504,7 +519,7 @@ h3 {
   top: 0;
   content: "";
   display: block;
-  background: #6a91fd;
+  background: #4070ef;
   width: 0.25rem;
   height: 100%;
 }
@@ -675,7 +690,7 @@ h3 {
   }
 }
 .percent__root {
-  color: #6a91fd;
+  color: #4070ef;
 }
 .percent__col {
   display: flex;
