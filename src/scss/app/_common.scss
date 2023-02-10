@@ -81,6 +81,7 @@ h3 {
     font-weight: 600;
     font-size: 1.125rem;
     color: $gray;
+    text-transform: capitalize;
   }
 }
 
@@ -98,5 +99,29 @@ h3 {
   }
   &__text {
     color: $gray;
+  }
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  &__title {
+    font-size: 4.5rem;
+    line-height: 1;
+    color: $primary;
+  }
+  &__col {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  &__plus {
+    color: #febd54;
+  }
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1;
   }
 }
