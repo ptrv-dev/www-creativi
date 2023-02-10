@@ -76,6 +76,10 @@ h3 {
     align-items: center;
     margin-bottom: 2rem;
     text-align: center;
+    &_left {
+      align-items: flex-start;
+      text-align: left;
+    }
   }
   &__suptitle {
     font-weight: 600;

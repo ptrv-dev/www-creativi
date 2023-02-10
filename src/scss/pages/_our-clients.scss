@@ -1,0 +1,37 @@
+.our-clients {
+  .section__header {
+    width: 380px;
+    flex-shrink: 0;
+    @media screen and (max-width: 1023.97px) {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  // .our-clients__container
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    @media screen and (max-width: 1023.97px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  // .our-clients__illustration
+
+  &__illustration {
+    width: 100%;
+    pointer-events: none;
+    border-radius: 48px 8px;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 100%;
+    }
+  }
+}
