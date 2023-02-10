@@ -188,6 +188,59 @@ h3 {
   color: #25262b;
 }
 
+.animate_from-bottom {
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.animate_from-bottom-big {
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(4rem);
+}
+.animate_from-bottom-big.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate_from-bottom.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate_from-left {
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+.animate_from-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.animate_from-right {
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateX(2rem);
+}
+.animate_from-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.animate_text {
+  transition: opacity 0.3s ease-in-out 0.15s, transform 0.4s ease-in-out 0.15s;
+  opacity: 0;
+  transform: translateY(-2rem);
+}
+.animate_text.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate_opacity {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+.animate_opacity.active {
+  opacity: 1;
+}
+
 .header {
   position: fixed;
   background: #fff;
