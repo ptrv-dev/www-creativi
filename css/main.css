@@ -289,7 +289,7 @@ h3 {
 }
 
 .hero__container {
-  margin-top: calc(140px - 3rem);
+  margin-top: calc(140px - 4rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -555,6 +555,35 @@ h3 {
 }
 .form__btn {
   align-self: center;
+}
+
+.our-team__body {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-card__image {
+  width: 280px;
+  height: 280px;
+  display: block;
+  border-radius: 3rem;
+}
+.team-card__title {
+  margin: 1rem 0 0.25rem 0;
+  font-size: 1.125rem;
+}
+.team-card__text {
+  color: #5f636d;
 }
 
 .footer {
