@@ -302,6 +302,87 @@
         </div>
       </div>
     </div>
+    <div class="contact-us section">
+      <div class="contact-us__container container">
+        <div class="section__header section__header_left">
+          <p class="section__suptitle">Contact us</p>
+          <h2 class="section__title">Leave a request and we will answer you</h2>
+        </div>
+        <div class="contact-us__body">
+          <div class="contact-us__illustration">
+            <img src="/img/contact-us/illustration.svg" alt="illustration" />
+          </div>
+          <form class="contact-us__form form">
+            <div class="form__row">
+              <label class="form__label">
+                <p>First name <i>*</i></p>
+                <input
+                  class="form__input input"
+                  type="text"
+                  placeholder="Darrel"
+                  required
+                  minlength="3"
+                />
+              </label>
+              <label class="form__label">
+                <p>Last name <i>*</i></p>
+                <input
+                  class="form__input input"
+                  type="text"
+                  placeholder="Braun"
+                  required
+                  minlength="3"
+                />
+              </label>
+            </div>
+            <label class="form__label">
+              <p>Email <i>*</i></p>
+              <input
+                class="form__input input"
+                type="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </label>
+            <label class="form__label">
+              <p>Message <i>*</i></p>
+              <textarea
+                class="form__input input"
+                placeholder="Enter your message here..."
+                rows="6"
+                required
+                minlength="16"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn form__btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 2L11 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 2L15 22L11 13L2 9L22 2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     @@include('./pages/components/_footer.html')
     @@include('./pages/components/_scripts.html')
   </body>

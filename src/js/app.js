@@ -37,3 +37,18 @@ function responsive() {
     headerContainer.appendChild(headerMenuButton);
   }
 }
+
+const form = document.querySelector('.form');
+const formInputs = document.querySelectorAll('.form__input');
+
+form.addEventListener('submit', formSubmit);
+
+function formSubmit(event) {
+  event.preventDefault();
+  setTimeout(() => {
+    alert('Message has been successfully sent.');
+    for (const input of formInputs) {
+      input.value = '';
+    }
+  }, 870);
+}

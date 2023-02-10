@@ -51,6 +51,7 @@ h3 {
 
 .btn {
   display: inline-flex;
+  border: none;
   text-decoration: none;
   align-items: center;
   gap: 0.5rem;
@@ -128,4 +129,13 @@ h3 {
     font-size: 1.5rem;
     line-height: 1;
   }
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: none;
+  border: 1px solid $dark;
+  font-size: 1rem;
+  color: $dark;
 }
