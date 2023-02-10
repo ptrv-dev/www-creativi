@@ -222,7 +222,7 @@ h3 {
   height: 3px;
   background: #25262b;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .header__menu {
     display: inline-flex;
   }
@@ -232,7 +232,7 @@ h3 {
   text-decoration: none;
   display: inline-flex;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .logo {
     flex: 1;
   }
@@ -266,7 +266,7 @@ h3 {
 .nav__link:hover::after {
   width: 100%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .nav {
     position: fixed;
     right: 10px;
@@ -584,6 +584,34 @@ h3 {
 }
 .team-card__text {
   color: #5f636d;
+}
+
+.percent__container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 767.97px) {
+  .percent__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.percent__root {
+  color: #6a91fd;
+}
+.percent__col {
+  display: flex;
+  flex-direction: column;
+}
+.percent__col p {
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 767.97px) {
+  .percent__col {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .footer {
