@@ -98,6 +98,12 @@ h3 {
       align-items: flex-start;
       text-align: left;
     }
+    &_white {
+      color: $white;
+      p {
+        color: $white;
+      }
+    }
   }
   &__suptitle {
     font-weight: 600;

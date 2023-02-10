@@ -1,4 +1,7 @@
 .wwd {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../img/what-we-do/bg.jpg') center center no-repeat;
+  background-size: cover;
   // .wwd__body
 
   &__body {

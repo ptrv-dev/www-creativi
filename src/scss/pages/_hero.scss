@@ -1,4 +1,7 @@
 .hero {
+  @media screen and (min-width: 767.98) {
+    padding-bottom: 8rem;
+  }
   // .hero__container
 
   &__container {
