@@ -10,15 +10,28 @@ const headerContainer = document.querySelector('.header__container');
 const headerMenuButton = document.querySelector('.header__menu');
 const headerNavigation = document.querySelector('.header__nav');
 const headerContactButton = document.querySelector('.header__btn');
+const navigationItems = document.querySelectorAll('.nav__link');
+
+function closeHeaderMenu() {
+  headerMenuButton.classList.remove('header__menu_active');
+  headerNavigation.classList.remove('active');
+}
+
+function openHeaderMenu() {
+  headerMenuButton.classList.add('header__menu_active');
+  headerNavigation.classList.add('active');
+}
+
+navigationItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    closeHeaderMenu();
+  });
+});
 
 headerMenuButton.addEventListener('click', () => {
-  if (headerMenuButton.classList.contains('header__menu_active')) {
-    headerMenuButton.classList.remove('header__menu_active');
-    headerNavigation.classList.remove('active');
-  } else {
-    headerMenuButton.classList.add('header__menu_active');
-    headerNavigation.classList.add('active');
-  }
+  if (headerMenuButton.classList.contains('header__menu_active'))
+    closeHeaderMenu();
+  else openHeaderMenu();
 });
 
 window.addEventListener('load', responsive);
