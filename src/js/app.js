@@ -52,3 +52,21 @@ function formSubmit(event) {
     }
   }, 870);
 }
+
+// animate
+
+function observerCallBack(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      // entry.target.classList.remove('active');
+    }
+  });
+}
+
+const observer = new IntersectionObserver(observerCallBack);
+
+const targets = document.querySelectorAll('.animate');
+
+targets.forEach((target) => observer.observe(target));
