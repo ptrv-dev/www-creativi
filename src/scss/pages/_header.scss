@@ -50,7 +50,7 @@
       background: $dark;
     }
     margin-left: 2rem;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: $burger-show-value) {
       display: inline-flex;
     }
   }
@@ -59,7 +59,7 @@
 .logo {
   text-decoration: none;
   display: inline-flex;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: $burger-show-value) {
     flex: 1;
   }
 }
@@ -95,7 +95,7 @@
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: $burger-show-value) {
     position: fixed;
     right: 10px;
     top: calc(40px + 2rem + 10px);
