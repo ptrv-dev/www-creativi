@@ -15,17 +15,6 @@
     flex: 1;
   }
 
-  // .footer__social
-
-  &__social {
-    display: flex;
-    gap: 1rem;
-    a {
-      text-decoration: none;
-      color: $dark;
-    }
-  }
-
   // .footer__info
 
   &__info {
