@@ -1,11 +1,11 @@
 .hero {
-  @media screen and (min-width: 767.98) {
-    padding-bottom: 8rem;
-  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 88px;
   // .hero__container
 
   &__container {
-    margin-top: calc(140px - 4rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
