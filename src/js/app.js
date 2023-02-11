@@ -11,6 +11,8 @@ const headerMenuButton = document.querySelector('.header__menu');
 const headerNavigation = document.querySelector('.header__nav');
 const headerContactButton = document.querySelector('.header__btn');
 const navigationItems = document.querySelectorAll('.nav__link');
+const headerActions = document.querySelector('.header__actions');
+const headerLanguage = document.querySelector('.header__lang');
 
 function closeHeaderMenu() {
   headerMenuButton.classList.remove('header__menu_active');
@@ -42,12 +44,12 @@ window.addEventListener(
 );
 
 function responsive() {
-  if (window.innerWidth <= 425) {
+  if (window.innerWidth <= 500) {
     headerNavigation.appendChild(headerContactButton);
   } else {
-    headerContainer.removeChild(headerMenuButton);
-    headerContainer.appendChild(headerContactButton);
-    headerContainer.appendChild(headerMenuButton);
+    headerActions.removeChild(headerLanguage);
+    headerActions.prepend(headerContactButton);
+    headerActions.prepend(headerLanguage);
   }
 }
 

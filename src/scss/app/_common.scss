@@ -20,6 +20,10 @@ body {
   }
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 input,
 textarea {
   font-family: $font-family;
@@ -27,6 +31,7 @@ textarea {
 
 button {
   cursor: pointer;
+  font-family: $font-family;
 }
 
 ul {

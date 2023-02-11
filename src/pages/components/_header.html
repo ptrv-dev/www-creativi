@@ -10,26 +10,62 @@
       <a href="#our-team" class="nav__link">Il nostro team</a>
       <a href="#our-clients" class="nav__link">I nostri clienti</a>
     </nav>
-    <a href="#contact-us" class="header__btn btn">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-      Contattateci
-    </a>
-    <button class="header__menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header__actions">
+      <div class="header__lang header-lang">
+        <button class="header-lang__btn">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="14"
+            viewBox="0 0 3 2"
+          >
+            <rect width="3" height="2" fill="#009246" />
+            <rect width="2" height="2" x="1" fill="#fff" />
+            <rect width="1" height="2" x="2" fill="#ce2b37" />
+          </svg>
+
+          IT
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="header-lang__list">
+          <a href="/" class="header-lang__link">IT</a>
+          <a href="/en" class="header-lang__link">EN</a>
+        </div>
+      </div>
+      <a href="#contact-us" class="header__btn btn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Contattateci
+      </a>
+      <button class="header__menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
